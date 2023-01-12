@@ -34,6 +34,13 @@ To run the pipeline, we need
   - **all: mux_dir**: the direcotry containing multiplexed R1/R2 read pairs, e.g. `/home/leej39/16S_QIIME2/test/multiplexed_fastq` 
   - **all: mapping**: the name of mapping file, e.g. `test_mapping_file.tsv`
 - To run the pipeline, activate the envrionment by entering `source activate qiime2-2019.7`, `cd` into `16S_QIIME2` and execute e.g.
+
+```
+bash snakemake --configfile path/to/config.yml --keep-going --latency-wait 90 --notemp --printshellcmds
+```
+
+OR
+
 ```bash
 snakemake \
     --configfile path/to/config.yml \
