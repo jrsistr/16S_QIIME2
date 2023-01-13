@@ -36,7 +36,7 @@ To run the pipeline, we need
 - To run the pipeline, activate the envrionment by entering `source activate qiime2-2019.7`, `cd` into `16S_QIIME2` and execute e.g.
 
 ```
-bash snakemake --configfile path/to/config.yml --keep-going --latency-wait 90 --notemp --printshellcmds
+snakemake --configfile path/to/config.yml --keep-going --latency-wait 90 --notemp --printshellcmds
 ```
 
 OR
